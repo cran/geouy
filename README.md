@@ -1,6 +1,10 @@
 # geouy <img align="right" src="man/figures/geouy_logo_a.png" alt="logo" width="160"> <img align="right" src="man/figures/geouy_logo_b.png" alt="logo" width="160">
 
 <!-- badges: start -->
+
+[![CRAN/METACRAN Version](https://www.r-pkg.org/badges/version/geouy)](https://CRAN.R-project.org/package=geouy)
+[![CRAN/METACRAN Total downloads](http://cranlogs.r-pkg.org/badges/grand-total/geouy?color=blue)](https://CRAN.R-project.org/package=geouy) 
+[![CRAN/METACRAN downloads per month](http://cranlogs.r-pkg.org/badges/geouy?color=orange)](https://CRAN.R-project.org/package=geouy)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Travis build status](https://travis-ci.org/RichDeto/geouy.svg?branch=master)](https://travis-ci.org/RichDeto/geouy)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/RichDeto/geouy?branch=master&svg=true)](https://ci.appveyor.com/project/RichDeto/geouy)
@@ -13,6 +17,10 @@
 ## Installation
 
 ```R
+# From CRAN
+  install.packages("geouy")
+  library(geouy)
+  
 # Use the development version with latest features
   utils::remove.packages('geouy')
   devtools::install_github("RichDeto/geouy")
@@ -32,7 +40,9 @@ secc <- load_geouy("Secciones")
 ## Available datasets:
 
 
-| Layer | Productor | Server | Year | Format |
+### Administrative limits 
+
+| Layer | Productor | Source | Year | Format |
 |-----|-----|-----|-----|-----|
 |`"Uruguay"`| `"INE"` | MIDES | 2011 | wfs |
 |`"Areas administrativas"`| `"SGM"` | SGM | 2011 | wfs |
@@ -54,28 +64,75 @@ secc <- load_geouy("Secciones")
 |`"Asentamientos irregulares"`| `"PMB"` | MIDES | 2014 | wfs |
 |`"Barrios"` | `"INE"` | MIDES | 2011 | wfs |
 |`"Balnearios"`| `"MTOP"` | MTOP |  2017 | wfs |
+|`"Secciones catastrales"` | `"DNC"` | MVOTMA | 2013 | zip |
+|`"Padrones rurales"` | `"DNC"` | "MVOTMA" | 2014 | zip |  
+|`"Padrones urbanos"`| `"DNC"` | MVOTMA | 2014 | zip | 
+|`"Secciones policiales"` | `"MI"` | MVOTMA | 2017 | zip |
+
+
+
+### Hidrology
+
+| Layer | Productor | Source | Year | Format |
+|-----|-----|-----|-----|-----|
+|`"Cuencas hidro N1"`| `"DINAGUA"` | MVOTMA | 2020 | zip |
+|`"Cuencas hidro N2"`| `"DINAGUA"` | MVOTMA | 2020 | zip |
+|`"Cuencas hidro N3"`| `"DINAGUA"` | MVOTMA | 2020 | zip |
+|`"Cuencas hidro N4"`| `"DINAGUA"` | MVOTMA | 2020 | zip |
+|`"Cuencas hidro N5"`| `"DINAGUA"` | MVOTMA | 2020 | zip |
 |`"Cursos de agua navegables y flotables"` | `"MTOP"` | MTOP | 2019 | wfs |
 |`"Lagunas publicas"` | `"MTOP"` | MTOP | 2019 |  wfs |
+|`"Ambientes acuaticos"` | `"FREPLATA"` | MVOTMA | 2009 | zip |
+|`"Areas protegidas"` |`DINAMA"` | MVOTMA | 2015 | zip |
+|`"Baniados"` | `"DINAMA"` | MVOTMA | NA | zip |
+|`"Batimetria"` | `"DINAMA"` | MVOTMA | 2020 | zip | 
+
+
+### Ways
+
+| Layer | Productor | Source | Year | Format |
+|-----|-----|-----|-----|-----|
 |`"Rutas"` | `"IDE"` | MIDES | 2017 | wfs |
 |`"Calles"` | `"IDE - UTE - IM"` | MIDES | 2017 | wfs |
 |`"Peajes"` | `"MTOP"` | MTOP | 2019 | wfs |
-|`"Instituciones deportivas"` | `"IDE"` | MIDES | 2015 | wfs |
 |`"Postes Kilometros"` |`"MTOP"` | MTOP | 2019 | wfs |
+
+### Services
+
+| Layer | Productor | Source | Year | Format |
+|-----|-----|-----|-----|-----|
+|`"Instituciones deportivas"` | `"IDE"` | MIDES | 2015 | wfs |
+|`"Playas"`| `"DINAMA¨` | MVOTMA | 2007 | zip |
+
+### Orthophotos
+
+| Layer | Productor | Source | Year | Format |
+|-----|-----|-----|-----|-----|
 |`"Grilla ortofotos urbana"` | `"IDE"` | IDE | 2019 | wfs |
 |`"Grilla ortofotos nacional"` | `"IDE"` | IDE | 2019 | wfs |
+  
+### Land Cover
+
+| Layer | Productor | Source | Year | Format |
+|-----|-----|-----|-----|-----|
+|`"Cobertura suelo 2000"` | `"DINAGUA"` | MVOTMA | 2000 | zip |
+|`"Cobertura suelo 2008"` | `"DINAGUA"` | MVOTMA | 2008 | zip |
+|`"Cobertura suelo 2011"` | `"DINAGUA"` | MVOTMA | 2011 | zip |
+|`"Cobertura suelo 2015"` | `"DINAGUA"` | MVOTMA | 2015 | zip |
 
 
-### Other functions:
+## Other functions:
 
 
 | Function | Action|
 |-----|-----|
 |`which_uy` | Add to an 'sf' object its spatial coincidence with one or more administrative units in Uruguay, generating the corresponding variables. | 
-|`tiles_ide_uy`| Download .tif files from the IDEuy orthophotos repository, according to a 'sf' object bbox. |
+|`tiles_ide_uy`| Download .jpg (with the jgw correponding files) or .tif files from the IDEuy orthophotos repository, according to a 'sf' object bbox. And have the posibility for Montevideo tiles use orthophotos with 10cm per pixel with the parameter urban = TRUE |
 |`geocode_ide_uy`| Allows geocoding directions using IDE_uy. |
 |`plot_geouy`| Plot a variable of your sf object with north and scale, set on a simple theme. | 
 |`is.uy4326`| Test if an 'sf' object match with Uruguay at crs = 4326. |
 |`is.uy32721`| Test if an 'sf' object match with Uruguay at crs = 32721.  |
+|`is.uy5381`| Test if an 'sf' object match with Uruguay at crs = 5381.  |
 | ... | ... | 
 
 ## History
@@ -110,3 +167,23 @@ If you work with geographic data of Uruguay and want to add your function or dat
     - Add a record to the `metadata` file in the `data-raw/` directory, with the corresponding data.
     - Also include this record in the corresponding table of the `README.md` file, with the corresponding format.
     - If everything works fine, then make a pull request
+
+## <i class="fa fa-pencil" aria-hidden="true"></i> Citation
+
+To cite `geouy` in publications, please use:
+
+Detomasi, Richard (2020) "geouy: Geographic Information of Uruguay". R package version 0.1.8
+   URL: https://github.com/RichDeto/geouy. 
+  
+A BibTeX entry for LaTeX users is:
+
+```
+@Misc{geouy20,
+  title = {geouy: Geographic Information of Uruguay},
+  author = {Richard Detomasi},
+  note = {R package version 0.1.8},
+  year = {2020},
+  url  = {https://github.com/RichDeto/geouy},
+}
+
+```

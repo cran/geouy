@@ -2,20 +2,24 @@
 % Please edit documentation in R/tiles_ide_uy.R
 \name{tiles_ide_uy}
 \alias{tiles_ide_uy}
-\title{This function allows to Download .tif files from the IDEuy orthophotos repository, according to a 'sf' object bbox.}
+\title{This function allows to Download .jpg or .tif files from the IDEuy tiles repository, according to a 'sf' object bbox.}
 \usage{
-tiles_ide_uy(x, folder = tempdir())
+tiles_ide_uy(x, format = "jpg", folder = tempdir(), urban = FALSE)
 }
 \arguments{
 \item{x}{An 'sf' object with the same crs as the homonym parameter}
 
+\item{format}{Format of the archives to download (avaiable: "jpg" and "tif") Default "jpg"}
+
 \item{folder}{Folder where are the files or be download}
+
+\item{urban}{If format is "tif", and urban default FALSE take orthophotos of national flight with 32cm per pixel, if TRUE take urban flight with 10cm per pixel (avaible only Montevideo at the moment)}
 }
 \value{
 raster::stack object with th cropped tif corresponding to x bbox
 }
 \description{
-This function allows to Download .tif files from the IDEuy orthophotos repository, according to a 'sf' object bbox.
+This function allows to Download .jpg or .tif files from the IDEuy tiles repository, according to a 'sf' object bbox.
 }
 \examples{
 \donttest{

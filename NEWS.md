@@ -1,6 +1,24 @@
 # log history of geouy package development
 
 -------------------------------------------------------
+## geouy v0.1.8 (2020-03-17)
+
+* Add to 'tiles_ide_uy()' function options to download .jpg in addition to .tif
+* Add more testthat for 'tiles_ide_uy()' function
+* Add zip format to 'load_goeuy()'
+* Add MVOTMA datasets to metadata, i.e.: Ambientes acuaticos, Areas protegidas, Batimetria, Secciones catastrales, Padrones rurales y urbanos, Secciones policiales, Playas and Cuencas hidrograficas in its 5 nivels.
+* Add to tiles_ide_uy the posibility for Montevideo tiles with urban = TRUE give orthophotos with 10cm per pixel 
+* Solved bug with raster::mosaic for combination of multiple tiles to cover a bbox.
+* Add a complementary function for 5382 crs evaluation
+
+## geouy v0.1.7 (2020-02-26)
+
+* Add layers for IDEuy orthophotos grids at 'load_geouy()' 
+* Add a 'tiles_ide_uy()' function and it's testthat dile
+* Add a complementary function for 5381 crs evaluation
+* Change all 'paste()' with 'glue()'
+* Add to testthat files 'skip_on...()' functions for a faster evaluation.
+
 ## geouy v0.1.6 (2020-02-09)
 
 * Add \value to .Rd files
@@ -24,7 +42,7 @@
 ## geouy v0.1.3 (2020-01-17)
 
   * Change readLines for xml2::read_html in geocode_ide_uy()
-  * Incorporate Viridis colors to plot_geouy()
+  * Incorporate Viridis colors to 'plot_geouy()'
   * Added testthat function to all functions   
 
 
