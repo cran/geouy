@@ -1,26 +1,28 @@
-## ---- include = FALSE----------------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
-)
-
-## ---- eval=FALSE, message=FALSE, warning=FALSE, include=TRUE-------------
-#  # install.packages('devtools') si no tiene instalado devtools
-#  devtools::install_github("RichDeto/geouy")
-
-## ----setup, message=FALSE, warning=FALSE, include=TRUE-------------------
-knitr::opts_chunk$set(
+  comment = "#>",
 	eval = FALSE,
 	message = FALSE,
 	warning = FALSE,
 	include = FALSE
 )
-library(geouy)
 
-## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE-------------
+## ----eval=FALSE, message=FALSE, warning=FALSE, include=TRUE-------------------
+#  install.packages('geouy')
+
+## ---- eval=FALSE, message=FALSE, warning=FALSE, include=TRUE------------------
+#  # install.packages('devtools') si no tiene instalado devtools
+#  devtools::install_github("RichDeto/geouy")
+
+## ----message=FALSE, warning=FALSE, include=TRUE-------------------------------
+#  
+#  library(geouy)
+
+## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE------------------
 #  depor <- geouy::load_geouy("Instituciones deportivas")
 
-## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE-------------
+## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE------------------
 #  nuevas <- data.frame(cbind(dpto = c("Montevideo", "Salto"),
 #                             loc = c("Montevideo", "Salto"),
 #                             dir = c("Cebollati esq. Magallanes",
@@ -29,6 +31,6 @@ library(geouy)
 #  nuevas_geo <- geocode_ide_uy(nuevas)
 #  
 
-## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE-------------
+## ----eval=FALSE, message=FALSE, warning=FALSE, include=FALSE------------------
 #  depor_dep <- geouy::which_uy(depor, "Departamentos")
 

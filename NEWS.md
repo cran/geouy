@@ -1,9 +1,18 @@
 # log history of geouy package development
 
 -------------------------------------------------------
+## geouy v0.2.0 (2020-05-07)
+
+* Verify compatibility with 1.0
+* Change the use of to RCurl::getURL at geocode_ide_uy()
+* Try change tiles_ide_uy() from raster to terra, but at the crop step the ptr slot is lost.
+* Improvement of plot_geouy
+* Remove tiles_ide_uy() function, because IDEuy change require methods
+
+
 ## geouy v0.1.9 (2020-03-20)
 
-* Update test with CRS structure for sf 0.9  and sp 1.4 versions
+* Update test with CRS structure for sf 0.9 version
 * Limits in geocode_geouy(), you must be part of uruguayan public organism and  fill this (forms)[https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/comunicacion/publicaciones/formularios-de-alta-y-consumo-de-servicios-de-la-pdi] if your organism is not yet vinculated.
 
 
