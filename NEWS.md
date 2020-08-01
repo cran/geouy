@@ -1,6 +1,19 @@
 # log history of geouy package development
 
 -------------------------------------------------------
+## geouy v0.2.2 (2020-07-31)
+
+* Add loc_agr_ine dataset of "Localidades agragadas" of INE.
+* Add a geouy.R to discribe the package and set globals variables
+* replace ggsn with ggspatial to improve north and scale aesthetics in plot_geouy 
+* remove lat and long axis in plot_goeuy
+* Add a param labels in plot_geouy for labels posiblity, if "%" porcentage with 1 decimal labels, if "n" the value is the label, if "c" put other variable in other_lab
+
+## geouy v0.2.1 (2020-06-09)
+ 
+* Add educational layers to load_geouy(): "Colegios privados N0a3", "Educación en Primera Infancia e Inicial",  "Jardines de infantes", "Escuelas",   "Escuelas con N3", "Educacion especial", "Educacion secundaria" y "UTU".
+* Add tryCatch for download.file() in load_geouy() to diferents zip files.
+
 ## geouy v0.2.0 (2020-05-07)
 
 * Verify compatibility with 1.0

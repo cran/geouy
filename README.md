@@ -70,7 +70,6 @@ secc <- load_geouy("Secciones")
 |`"Secciones policiales"` | `"MI"` | MVOTMA | 2017 | zip |
 
 
-
 ### Hidrology
 
 | Layer | Productor | Source | Year | Format |
@@ -101,8 +100,16 @@ secc <- load_geouy("Secciones")
 
 | Layer | Productor | Source | Year | Format |
 |-----|-----|-----|-----|-----|
-|`"Instituciones deportivas"` | `"IDE"` | MIDES | 2015 | wfs |
-|`"Playas"`| `"DINAMA¨` | MVOTMA | 2007 | zip |
+| `"Educación en Primera Infancia e Inicial"` | `"CEIP"` | MIDES | 2020 | zip | 
+| `"Jardines de infantes"` | `"CEIP"` | MIDES | 2020 | zip |
+| `"Colegios privados N0a3"` | `"CEIP"` | MIDES | 2020 | zip |
+| `"Escuelas con N3"` | `"CEIP"` | MIDES | 2020 | zip |
+| `"Escuelas"` | `"CEIP"` | MIDES | 2020 | zip | 
+| `"Educacion especial"` | `"CEIP"` | MIDES | 2020 | zip | 
+| `"Educacion secundaria"` | `"CEIP"` | MIDES | 2020 |  zip |
+| `"UTU"` | `"ANEP"` | MIDES | 2020 |  zip |
+| `"Instituciones deportivas"` | `"IDE"` | MIDES | 2015 | wfs |
+| `"Playas"`| `"DINAMA¨` | MVOTMA | 2007 | zip |
 
 ### Orthophotos
 
@@ -172,7 +179,7 @@ If you work with geographic data of Uruguay and want to add your function or dat
 
 To cite `geouy` in publications, please use:
 
-Detomasi, Richard (2020) "geouy: Geographic Information of Uruguay". R package version 0.2.0
+Detomasi, Richard (2020) "geouy: Geographic Information of Uruguay". R package version 0.2.1
    URL: https://github.com/RichDeto/geouy. 
   
 A BibTeX entry for LaTeX users is:
@@ -181,7 +188,7 @@ A BibTeX entry for LaTeX users is:
 @Misc{geouy20,
   title = {geouy: Geographic Information of Uruguay},
   author = {Richard Detomasi},
-  note = {R package version 0.2.0},
+  note = {R package version 0.2.1},
   year = {2020},
   url  = {https://github.com/RichDeto/geouy},
 }
