@@ -24,6 +24,14 @@ This function allows to take oficial uruguayan geometries, as object "sf", from 
 secc <- load_geouy(c = "Secciones")
 }
 }
+\seealso{
+Other service: 
+\code{\link{add_geom}()},
+\code{\link{geocode_ide_uy}()},
+\code{\link{where_uy}()},
+\code{\link{which_uy}()}
+}
+\concept{service}
 \keyword{IDE}
 \keyword{INE}
 \keyword{MIDES}

@@ -17,9 +17,15 @@ This function test if an 'sf' object match with Uruguay at crs = 5381.
 }
 \examples{
 \donttest{
-is.uy5381(load_geouy("Peajes"))
+is.uy5381(load_geouy("CCZ"))
 }
 }
+\seealso{
+Other crs: 
+\code{\link{is.uy32721}()},
+\code{\link{is.uy4326}()}
+}
+\concept{crs}
 \keyword{CRS}
 \keyword{Uruguay}
 \keyword{sf}

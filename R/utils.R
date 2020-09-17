@@ -1,4 +1,5 @@
 #' This function test if an 'sf' object match with Uruguay at crs = 4326.
+#' @family crs
 #' @param x An 'sf' object with the same crs as the homonym parameter
 #' @keywords CRS sf Uruguay
 #' @return logical value based in crs parameter of the sf object
@@ -24,6 +25,7 @@ is.uy4326 <- function(x){
 }
 
 #' This function test if an 'sf' object match with Uruguay at crs = 32721.
+#' @family crs
 #' @param x An 'sf' object with the same crs as the homonym parameter
 #' @keywords CRS sf Uruguay
 #' @return logical value based in crs parameter of the sf object
@@ -49,13 +51,14 @@ is.uy32721 <- function(x){
 }
 
 #' This function test if an 'sf' object match with Uruguay at crs = 5381.
+#' @family crs
 #' @param x An 'sf' object with the same crs as the homonym parameter
 #' @keywords CRS sf Uruguay
 #' @return logical value based in crs parameter of the sf object
 #' @export
 #' @examples
 #'\donttest{
-#' is.uy5381(load_geouy("Peajes"))
+#' is.uy5381(load_geouy("CCZ"))
 #'}
 
 is.uy5381 <- function(x){
@@ -80,7 +83,7 @@ is.uy5381 <- function(x){
 #' @export
 #' @examples
 #'\donttest{
-#' is.uy5382(load_geouy("Peajes"))
+#' is.uy5382(load_geouy("Dptos"))
 #'}
 
 is.uy5382 <- function(x){

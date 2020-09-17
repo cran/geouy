@@ -24,5 +24,13 @@ A function to geocoding directions using IDE_uy
 # geocode_ide_uy(x2)
 }
 }
+\seealso{
+Other service: 
+\code{\link{add_geom}()},
+\code{\link{load_geouy}()},
+\code{\link{where_uy}()},
+\code{\link{which_uy}()}
+}
+\concept{service}
 \keyword{IDE_uy}
 \keyword{geocoding}
