@@ -6,10 +6,11 @@
 [![CRAN/METACRAN Total downloads](http://cranlogs.r-pkg.org/badges/grand-total/geouy?color=blue)](https://CRAN.R-project.org/package=geouy) 
 [![CRAN/METACRAN downloads per month](http://cranlogs.r-pkg.org/badges/geouy?color=orange)](https://CRAN.R-project.org/package=geouy)
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
-[![Travis build status](https://travis-ci.org/RichDeto/geouy.svg?branch=master)](https://travis-ci.org/RichDeto/geouy)
+[![R build status](https://github.com/RichDeto/geouy/workflows/R-CMD-check/badge.svg)](https://github.com/RichDeto/geouy/actions)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/RichDeto/geouy?branch=master&svg=true)](https://ci.appveyor.com/project/RichDeto/geouy)
 [![Codecov test coverage](https://codecov.io/gh/RichDeto/geouy/branch/master/graph/badge.svg)](https://codecov.io/gh/RichDeto/geouy?branch=master)
 [![DOI](https://zenodo.org/badge/229800365.svg)](https://zenodo.org/badge/latestdoi/229800365)
+
 <!-- badges: end -->
 
 **geouy** is an R package that allows users to easily access official spatial data sets of Uruguay. The package includes a wide range of geospatial datasets as *simple features* (`sf`), available at various geographic scales and for various years with harmonized attributes and projection (see detailed list below).
@@ -48,14 +49,16 @@ secc <- load_geouy("Secciones")
 |-----|-----|-----|-----|-----|
 |`"Uruguay"`| `"INE"` | MIDES | 2011 | wfs |
 |`"Areas administrativas"`| `"SGM"` | SGM | 2011 | wfs |
-|`"Limites departamentales"`| `"IGM"` | IGM | 2011 | wfs |
-|`"Departamentos"`| `"IDE"` | MIDES | 2011 | wfs |
+|`"Deptos"`| `"INE"` | IDE | 2011 | wfs |
+|`"Dptos"`| `"DINAMA"` | "MVOTMA"| 2020  | wfs | 
+|`"Limites departamentales"`| `"IGM"` | "IGM" | 2011  | wfs | 
+|`"Departamentos"`| `"IDE"` | "MIDES" | 2011  | wfs |
 |`"Secciones"`| `"INE Censo"` | MIDES | 2011 | wfs |
-|`"Secc MVD 2004"`| `"INE"` | MIDES | 2004 | wfs |
 |`"Segmentos"`| `"INE Censo"` | MIDES | 2011 | wfs |
+|`"Zonas"`| `"INE Censo"` | MIDES | 2011 | wfs |
+|`"Secc MVD 2004"`| `"INE"` | MIDES | 2004 | wfs |
 |`"Segm MVD 2004"`| `"INE"` | MIDES | 2004 | wfs |
 |`"Segm URB INT 2004"`| `"INE"` | MIDES | 2004 | wfs |
-|`"Zonas"`| `"INE Censo"` | MIDES | 2011 | wfs |
 |`"Zonas MVD 2004"`| `"INE"` | MIDES | 2004 | wfs |
 |`"Zonas URB INT 2004"`| `"INE"` | MIDES | 2004 | wfs |
 |`"Localidades pg"`| `"INE Censo"` | MIDES | 2011 | wfs |
@@ -129,6 +132,8 @@ secc <- load_geouy("Secciones")
 |`"Cobertura suelo 2008"` | `"DINAGUA"` | MVOTMA | 2008 | zip |
 |`"Cobertura suelo 2011"` | `"DINAGUA"` | MVOTMA | 2011 | zip |
 |`"Cobertura suelo 2015"` | `"DINAGUA"` | MVOTMA | 2015 | zip |
+|`"CONEAT"` | `"RENARE"` | "RENARE" | NA  | wfs |
+
 
 
 ### which_uy() 

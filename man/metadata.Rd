@@ -5,7 +5,7 @@
 \alias{metadata}
 \title{Metadata of geoservices for Uruguay}
 \format{
-A data frame with 18 rows and 9 variables:
+A data frame with 59 rows and 9 variables:
 \describe{
   \item{capa}{name of the geoservice}
   \item{productor}{name of the institution produced the data}
@@ -28,6 +28,7 @@ for Uruguay.
 \seealso{
 Other data: 
 \code{\link{loc_agr_ine}},
+\code{\link{metadata_tables}},
 \code{\link{metadata_wms}}
 }
 \concept{data}
