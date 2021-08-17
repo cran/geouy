@@ -28,7 +28,9 @@ for Uruguay.
 Other data: 
 \code{\link{metadata_tables}},
 \code{\link{metadata_wms}},
-\code{\link{metadata}}
+\code{\link{metadata}},
+\code{\link{mvd_barrios_grid}},
+\code{\link{uy_deptos_grid}}
 }
 \concept{data}
 \keyword{datasets}

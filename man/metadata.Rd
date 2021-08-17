@@ -5,7 +5,7 @@
 \alias{metadata}
 \title{Metadata of geoservices for Uruguay}
 \format{
-A data frame with 59 rows and 9 variables:
+A data frame with 59 rows and 10 variables:
 \describe{
   \item{capa}{name of the geoservice}
   \item{productor}{name of the institution produced the data}
@@ -16,6 +16,7 @@ A data frame with 59 rows and 9 variables:
   \item{url}{url of the service}
   \item{cod}{name of the variable that contains the cod value of the geometries}
   \item{name}{name of the variable that contains the name of the geometries}
+  \item{enc}{name of the encoding of the geoservice table}
 }
 }
 \usage{
@@ -29,7 +30,9 @@ for Uruguay.
 Other data: 
 \code{\link{loc_agr_ine}},
 \code{\link{metadata_tables}},
-\code{\link{metadata_wms}}
+\code{\link{metadata_wms}},
+\code{\link{mvd_barrios_grid}},
+\code{\link{uy_deptos_grid}}
 }
 \concept{data}
 \keyword{datasets}

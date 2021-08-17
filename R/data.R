@@ -3,7 +3,7 @@
 #' A dataset containing the urls and other attributes of geoservices 
 #' for Uruguay.
 #' @family data
-#' @format A data frame with 59 rows and 9 variables:
+#' @format A data frame with 59 rows and 10 variables:
 #' \describe{
 #'   \item{capa}{name of the geoservice}
 #'   \item{productor}{name of the institution produced the data}
@@ -14,6 +14,7 @@
 #'   \item{url}{url of the service}
 #'   \item{cod}{name of the variable that contains the cod value of the geometries}
 #'   \item{name}{name of the variable that contains the name of the geometries}
+#'   \item{enc}{name of the encoding of the geoservice table}
 #' }
 "metadata"
 
@@ -42,6 +43,7 @@
 #'   \item{url}{url of the service}
 #' }
 "metadata_tables"
+
 #' INE "Localidades Agregadas"
 #'
 #' A dataset containing the cods, names and others attributes of urban locations 
@@ -59,3 +61,29 @@
 #'   \item{cat_loc_agr}{Tipical categories of "Localidades"}
 #' }
 "loc_agr_ine"
+
+#' Uruguay Departments grid
+#'
+#' A dataset containing the cods, names and others attributes as a geofacet grid
+#' @family data
+#' @format A data frame with 19 rows and 4 variables:
+#' \describe{
+#'   \item{name}{name of the "Departamento"}
+#'   \item{code}{INE code of the "Departamento"}
+#'   \item{row}{row position in the grid}
+#'   \item{col}{col position in the grid}
+#' }
+"uy_deptos_grid"
+
+#' Montevideo barrios grid
+#'
+#' A dataset containing the cods, names and others attributes as a geofacet grid
+#' @family data
+#' @format A data frame with 62 rows and 4 variables:
+#' \describe{
+#'   \item{name}{name of the "Barrio"}
+#'   \item{code}{INE code of the "Barrio"}
+#'   \item{row}{row position in the grid}
+#'   \item{col}{col position in the grid}
+#' }
+"mvd_barrios_grid"

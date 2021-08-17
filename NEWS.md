@@ -1,6 +1,14 @@
 # log history of geouy package development
 
 -------------------------------------------------------
+## geouy v0.2.5 (2021-08-12)
+
+* Add demographic links from IDEuy
+* Add an encoding variable to metadata.
+* Implementation of encoding definition to load_geouy()
+* Add a uy_deptos_grid and a mvd_barrios_grid as geofacet grid dataset 
+* Improve citacion year and version
+
 ## geouy v0.2.4 (2021-05-02)
 
 * plot_goeuy % bug fixed
