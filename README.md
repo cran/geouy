@@ -8,7 +8,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![R build status](https://github.com/RichDeto/geouy/workflows/R-CMD-check/badge.svg)](https://github.com/RichDeto/geouy/actions)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/RichDeto/geouy?branch=master&svg=true)](https://ci.appveyor.com/project/RichDeto/geouy)
-[![Codecov test coverage](https://codecov.io/gh/RichDeto/geouy/branch/master/graph/badge.svg)](https://codecov.io/gh/RichDeto/geouy?branch=master)
+[![Codecov test coverage](https://codecov.io/gh/RichDeto/geouy/branch/master/graph/badge.svg)]( https://app.codecov.io/gh/RichDeto/geouy?branch=master)
 [![DOI](https://zenodo.org/badge/229800365.svg)](https://zenodo.org/badge/latestdoi/229800365)
 
 <!-- badges: end -->
@@ -65,7 +65,8 @@ secc <- load_geouy("Secciones")
 |`"Localidades pt"`| `"INE Censo"` | MIDES | 2011 | wfs |
 |`"Centros poblados pg"`| `"SGM"` | SGM | 2011 | wfs |
 |`"Centros poblados pt"`| `"SGM"` | SGM | 2011 | wfs |
-|`"Municipios"`| `"IGM"` | IGM | 2011 | wfs |
+|`"Municipios10"`| `"DINOT-IM-IC"` | MVOTMA | 2010 | zip |
+|`"Municipios15"`| `"DINOT-IM-IC"` | MVOTMA | 2015 | zip |
 |`"CCZ"`| `"INE"` | MIDES | 2011 | wfs |
 |`"Asentamientos irregulares"`| `"PMB"` | MIDES | 2014 | wfs |
 |`"Barrios"` | `"INE"` | MIDES | 2011 | wfs |
@@ -115,6 +116,7 @@ secc <- load_geouy("Secciones")
 
 | Layer | Productor | Source | Year | Format |
 |-----|-----|-----|-----|-----|
+| `"OTs"` | `"MIDES"` | MIDES | 2022 | zip |
 | `"Educación en Primera Infancia e Inicial"` | `"CEIP"` | MIDES | 2020 | zip | 
 | `"Jardines de infantes"` | `"CEIP"` | MIDES | 2020 | zip |
 | `"Colegios privados N0a3"` | `"CEIP"` | MIDES | 2020 | zip |
