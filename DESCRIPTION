@@ -1,7 +1,7 @@
 Package: geouy
 Type: Package
 Title: Geographic Information of Uruguay
-Version: 0.2.6
+Version: 0.2.7
 Authors@R: c(
 	      person(given = "Richard", 
 	      family = "Detomasi", 
@@ -26,17 +26,17 @@ Language: en, es
 ByteCompile: true
 Encoding: UTF-8
 LazyData: TRUE
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 SystemRequirements: 'unrar' (Linux/macOS) or '7-Zip' (Windows) to work
         with '.rar' files, C++11, GDAL (>= 2.0.1), GEOS (>= 3.8.0),
         PROJ (>= 6.2.1)
 Imports: rlang, curl, dplyr, glue, stringr, ggplot2, ggthemes,
         ggspatial, methods, magrittr, fs, sf, assertthat, viridis,
-        raster, sp, rjson
+        raster, sp, rjson, tidyselect
 Suggests: rmarkdown, knitr
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2022-10-05 23:12:46 UTC; Usuario
+Packaged: 2023-05-17 16:38:42 UTC; rdetomasi
 Author: Richard Detomasi [aut, cre, cph]
     (<https://orcid.org/0000-0002-6725-0261>),
   Ministerio de Desarrollo Social, Uruguay (MIDES) [dtc],
@@ -48,4 +48,4 @@ Author: Richard Detomasi [aut, cre, cph]
   Ministerio de Vivienda, Ordenamiento Territorial y Medio Ambiente,
     Uruguay (MVOTMA) [dtc]
 Repository: CRAN
-Date/Publication: 2022-10-05 23:40:02 UTC
+Date/Publication: 2023-05-17 17:20:02 UTC
